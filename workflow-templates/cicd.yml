@@ -6,6 +6,7 @@ on:
         description: 'Branch to deploy'
         required: true
         default: 'develop'
+        #Change it
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
   ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
@@ -17,6 +18,7 @@ jobs:
     runs-on: ubuntu-20.04
     environment:
       name: Development
+      #Change it
     steps:
     - name: Information
       env:
